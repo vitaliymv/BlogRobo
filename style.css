@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: segoe print;
+	padding: 20px;
+	background: aqua;
+}
+
+header, footer{
+    background: gold;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    margin: 15px 0;
+}
+
+.card-header {
+	background-color: #8BFF8E;
+	transition: 0.2s;
+}
+
+.card:hover .card-header {
+	background-color: #51EF55;
+	transition: 0.2s;
+}
+
+.img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+}
+
+  /*dark mode*/
+
+label{
+	position: absolute;
+	width: 45px;
+	height: 26px;
+	right: 20px;
+	top: 20px;
+	border:2px solid;
+	border-radius: 20px;
+}
+
+label:before{
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	left: 1px;
+	top: 1px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: black;
+	transition: 0.4s;
+}
+
+label.active:before{
+    left: 21px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+body.night{
+    background: #20222c;
+    color: #fff;
+}
+
+label.active:before{
+    left:21px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+  }
+  
+body.night{
+    background: #20222c;
+    color: #fff;
+}
+
+.theme{
+    background: #042244;
+    border: none !important;
+ }
+
+.card-header.theme {
+    background-color: rgb(0, 98, 255) !important;
+}
+
+.card.theme:hover .card-header {
+    background-color:  #4995ec !important;
+}
+
+.theme a {
+    color: rgb(216, 194, 67);
+}
+
+.theme a:hover {
+    color: rgb(243, 229, 148);
+}
