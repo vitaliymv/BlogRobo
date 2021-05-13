@@ -110,6 +110,6 @@ body.night{
     color: rgb(243, 229, 148);
 }
 
-.theme .modal-header, .modal-title {
+.theme .modal-header {
     background-color: #093b74;
 }
